@@ -1,134 +1,177 @@
-<img src="https://cdn.prod.website-files.com/677c400686e724409a5a7409/6790ad949cf622dc8dcd9fe4_nextwork-logo-leather.svg" alt="NextWork" width="300" />
-
 # Host a Website on Amazon S3
 
-**Project Link:** [View Project](http://learn.nextwork.org/projects/aws-host-a-website-on-s3)
 
-**Author:** Jayasri Selvi  
-**Email:** jayasriselvi23@gmail.com
 
----
-
-![Image](http://learn.nextwork.org/confident_vermilion_curious_karearea/uploads/aws-host-a-website-on-s3_5d4474f9)
+**Author:** Jayasri Selvi
+**Email:** [jayasriselvi23@gmail.com](mailto:jayasriselvi23@gmail.com)
 
 ---
 
-## Introducing Today's Project!
+## Project Overview
 
-### Project overview
+In this project, I successfully hosted a static website using **Amazon S3 (Simple Storage Service)**. The goal was to learn how cloud storage can also be used for website hosting by uploading website files, configuring permissions, and making the site publicly accessible through the internet.
 
-In this project, I am demonstrating the hosting of the website on  amazon s3 (amazon simple storage services)  .
+### AWS Services and Concepts Used
 
-### Tools and concepts
+* Amazon S3
+* Static Website Hosting
+* Access Control Lists (ACLs)
+* Bucket Policies
+* Public Access Permission 
 
-Services I used were amaxon s3 and ACL and bucket policy and hosting static website  Key concepts I learnt include how to store the file and folder in s3 bucket and how to host it on the s3 
+### Key Skills Learned
 
-### Time, challenges, and wins
+* Creating and configuring an S3 bucket
+* Uploading website files and folders
+* Enabling static website hosting
+* Managing permissions using ACLs and bucket policies
+* Troubleshooting access issues such as 403 Forbidden errors
 
-This project took me approximately one hour The most challenging part was  resolve the troubleshooting error .
+### Project Duration
 
----
+**Approximately 1 hour**
 
-## How I Set Up an S3 Bucket
+### Challenges Faced
 
-### What I did in this step
+The most challenging part was troubleshooting permission-related errors and correctly configuring public access.
 
-In this step, I am opening  amazon s3 and going  to create storage space for my website files 
+### Project Outcome
 
-### How long it took to create the bucket
-
-Creating an S3 bucket took me just 2 minutes
-
-### Region selection
-
-The Region I picked for my S3 bucket was mumbai because it is the  region which is near to my current location .
-
-### Understanding bucket name uniqueness
-
-S3 bucket names are globally unique! This means no one can access unless the user delete the bucket
-
-![Image](http://learn.nextwork.org/confident_vermilion_curious_karearea/uploads/aws-host-a-website-on-s3_ba6d42ad)
+Successfully deployed a fully functional static website hosted on Amazon S3.
 
 ---
 
-## Upload Website Files to S3
+## Step 1: Setting Up the S3 Bucket
 
-### What I did in this step
+I began by accessing Amazon S3 through the AWS Management Console and creating a new bucket to store my website files.
 
-In this step, I will download the html file and zip file of images  and upload both files into s3 bucket .
+### Bucket Configuration
 
-### Files I uploaded
+* **Region Selected:** Mumbai (ap-south-1)
+* **Reason:** Chosen because it is geographically closer to my location, which can improve latency.
 
-I uploaded two files to my S3 bucket - they were index. html and the another folder is nextwork everyone love ..
+### Important Learning
 
-### How the files work together
+S3 bucket names are globally unique, meaning each bucket name must be different from all existing S3 buckets worldwide.
 
-Both files are necessary for this project as it has images and html page.
+### Time Taken
 
-![Image](http://learn.nextwork.org/confident_vermilion_curious_karearea/uploads/aws-host-a-website-on-s3_a265af88)
-
----
-
-## Static Website Hosting on S3
-
-### What I did in this step
-
-In this step, I will configure the s3 bucket for hosting static website 
-
-### Understanding website hosting
-
-Website hosting means making the website visible or accessible to any  people through the internet  in the world
-
-### How I enabled website hosting
-
-To enable website hosting with my S3 bucket, I need to click the enable in static website hosting.
-
-### Access Control Lists (ACLs)
-
-An ACL = a set of rules that decides who can get access to a resource. Enabling ACLs in this S3 setup lets you control who can access and do things with the objects (i.e. website files) you upload into your bucket. With ACLs, different AWS accounts can own and control different files in your bucket.
-
-
-
-![Image](http://learn.nextwork.org/confident_vermilion_curious_karearea/uploads/aws-host-a-website-on-s3_c22c54c0)
+Creating the bucket took approximately **2 minutes**.
 
 ---
 
-## Bucket Endpoints
+## Step 2: Uploading Website Files
 
-### Understanding bucket endpoint URLs
+Next, I uploaded the required website files into the bucket.
 
-Once static website is enabled, S3 produces a bucket endpoint URL, which can be accessible anywhere but the content in the bucket cannot be accessible because it is private.
+### Files Uploaded
 
-### What I saw when I tested the endpoint
+* `index.html`
+* Image/assets folder provided by NextWork
 
-When I first visited the bucket endpoint URL, I saw  the error message . The reason for this error was the content in the website is private.
+### Why These Files Matter
 
-![Image](http://learn.nextwork.org/confident_vermilion_curious_karearea/uploads/aws-host-a-website-on-s3_22ce4daf)
+* `index.html` serves as the main webpage
+* Asset folders contain images and supporting resources required for the website layout and design
+
+This step ensured my website had all necessary content for proper display.
 
 ---
 
-## Success!
+## Step 3: Enabling Static Website Hosting
 
-### What I did in this step
+After uploading files, I configured the bucket for static website hosting.
 
-In this step, I will make sure the public can see the website live on the internet .
+### What Website Hosting Means
 
-### How I resolved the 403 error
+Static website hosting allows files stored in S3 to be served as a public website over the internet.
 
-To resolve this 403 Forbidden error, I have checked all whether the file   names are correct . all the files are uploaded .
+### Configuration Steps
 
-![Image](http://learn.nextwork.org/confident_vermilion_curious_karearea/uploads/aws-host-a-website-on-s3_5d4474f9)
+* Enabled static website hosting in bucket properties
+* Specified `index.html` as the default homepage
+
+### ACLs (Access Control Lists)
+
+ACLs define who can access bucket objects. Enabling ACLs helped manage public access permissions for website files.
+
+---
+
+## Step 4: Testing the Bucket Endpoint
+
+Once hosting was enabled, Amazon S3 generated a bucket website endpoint URL.
+
+### Initial Result
+
+When I first opened the endpoint, I encountered a **403 Forbidden** error.
+
+
+![alt text](image.png)
+
+### Reason for Error
+
+Although hosting was enabled, the website files were still private due to restrictive permissions.
+
+---
+
+## Step 5: Fixing Permissions and Going Live
+
+To make the website publicly accessible, I updated bucket permissions.
+
+### Actions Taken
+
+* Verified file names and structure
+* Adjusted public access settings
+* Configured bucket policy to allow public read access
+
+### Final Result
+
+The website became successfully accessible online.
 
 ---
 
 ## Bucket Policies
 
-### What I did in this extension
+Bucket policies are JSON-based permission settings that define who can access bucket resources.
 
-### Understanding bucket policies
+### My Bucket Policy Purpose
 
-### What my bucket policy does
+The policy allowed:
+
+* Public read access to website files
+* Website accessibility via browser
+* Secure and controlled permissions for static hosting
+
+### Example Use
+
+This policy ensures users worldwide can view website content while maintaining administrative control.
 
 ---
 
+## Final Reflection
+
+This project gave me practical experience with foundational AWS cloud concepts and strengthened my understanding of:
+
+* Cloud storage
+* Web hosting
+* Security permissions
+* Troubleshooting deployment issues
+
+### Overall Achievement
+
+This project was an excellent hands-on introduction to AWS and cloud-based web deployment.
+
 ---
+
+## Future Improvements
+
+* Add CloudFront for faster global content delivery
+* Use Route 53 for custom domain integration
+* Implement HTTPS using AWS Certificate Manager
+* Automate deployment using Terraform or CloudFormation
+
+---
+
+## Conclusion
+
+Hosting a website on Amazon S3 is a cost-effective, scalable, and beginner-friendly way to understand cloud deployment. This project enhanced my practical AWS skills and provided valuable experience for future cloud and DevOps projects.
