@@ -27,9 +27,6 @@ In this project, I successfully hosted a static website using **Amazon S3 (Simpl
 * Managing permissions using ACLs and bucket policies
 * Troubleshooting access issues such as 403 Forbidden errors
 
-### Project Duration
-
-**Approximately 1 hour**
 
 ### Challenges Faced
 
