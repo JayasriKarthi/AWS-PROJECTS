@@ -2,7 +2,7 @@
 
 
 
-**Author:** Jayasri Selvi
+**Author:** Jayasri K
 **Email:** [jayasriselvi23@gmail.com](mailto:jayasriselvi23@gmail.com)
 
 ---
@@ -54,9 +54,7 @@ I began by accessing Amazon S3 through the AWS Management Console and creating a
 
 S3 bucket names are globally unique, meaning each bucket name must be different from all existing S3 buckets worldwide.
 
-### Time Taken
 
-Creating the bucket took approximately **2 minutes**.
 
 ---
 
