@@ -54,7 +54,7 @@ I began by accessing Amazon S3 through the AWS Management Console and creating a
 
 S3 bucket names are globally unique, meaning each bucket name must be different from all existing S3 buckets worldwide.
 
-![alt text](<Screenshot from 2026-05-06 08-07-47.png>)
+![alt text](<Screenshot from 2026-05-06 08-07-47.png>) 
 
 
 
@@ -76,6 +76,9 @@ Next, I uploaded the required website files into the bucket.
 
 This step ensured my website had all necessary content for proper display.
 
+![alt text](<Screenshot from 2026-05-06 08-13-22.png>)
+
+
 ---
 
 ## Step 3: Enabling Static Website Hosting
@@ -94,6 +97,10 @@ Static website hosting allows files stored in S3 to be served as a public websit
 ### ACLs (Access Control Lists)
 
 ACLs define who can access bucket objects. Enabling ACLs helped manage public access permissions for website files.
+
+![alt text](<Screenshot from 2026-05-06 08-15-29.png>)
+
+![alt text](<Screenshot from 2026-05-06 08-16-22.png>)
 
 ---
 
@@ -128,7 +135,11 @@ To make the website publicly accessible, I updated bucket permissions.
 
 The website became successfully accessible online.
 
+![alt text](<Screenshot from 2026-05-06 08-23-07.png>)
+
 ---
+
+
 
 ## Bucket Policies
 
