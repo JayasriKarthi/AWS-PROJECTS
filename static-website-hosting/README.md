@@ -54,6 +54,8 @@ I began by accessing Amazon S3 through the AWS Management Console and creating a
 
 S3 bucket names are globally unique, meaning each bucket name must be different from all existing S3 buckets worldwide.
 
+![alt text](<Screenshot from 2026-05-06 08-07-47.png>)
+
 
 
 ---
