@@ -1,33 +1,55 @@
-# IAM Notes
+<section>
+  <h2>What I Did</h2>
+  <p>
+    I created a custom IAM policy that allows users to access only development
+    EC2 instances.
+  </p>
 
-What I Did
+  <h2>IAM Users and User Groups</h2>
 
-I created a custom IAM policy that allows users to access only development EC2 instances.
+  <h3>IAM User Groups</h3>
+  <p>
+    IAM user groups help manage permissions for multiple users at once.
+  </p>
 
-AM Users and User Groups
-IAM User Groups
+  <p>
+    Instead of assigning policies individually, policies can be attached
+    directly to groups.
+  </p>
 
-IAM user groups help manage permissions for multiple users at once.
+  <h3>IAM Users</h3>
+  <p>
+    IAM users represent individuals who need access to AWS resources.
+  </p>
 
-Instead of assigning policies individually, policies can be attached directly to groups.
+  <p>
+    In this project, I created an IAM user for interns and attached them to
+    the development access group.
+  </p>
 
-IAM Users
+  <h2>Testing IAM Permissions</h2>
 
-IAM users represent individuals who need access to AWS resources.
+  <h3>Logging in as an IAM User</h3>
+  <p>
+    I logged in using the IAM user credentials to test whether the policy
+    worked correctly.
+  </p>
 
-In this project, I created an IAM user for interns and attached them to the development access group.
+  <h3>Production Instance Testing</h3>
+  <p>
+    When attempting to stop the production EC2 instance, access was denied
+    because the policy only allows access to development resources.
+  </p>
 
-Testing IAM Permissions
-Logging in as an IAM User
+  <p>
+    This demonstrates secure permission boundaries in AWS IAM.
+  </p>
 
-I logged in using the IAM user credentials to test whether the policy worked correctly.
+  <h3>Development Instance Testing</h3>
+  <p>
+    The IAM user was able to interact with the development EC2 instance
+    because the correct resource tag matched the IAM policy condition.
+  </p>
+</section>
 
-Production Instance Testing
-
-When attempting to stop the production EC2 instance, access was denied because the policy only allows access to development resources.
-
-This demonstrates secure permission boundaries in AWS IAM.
-
-Development Instance Testing
-
-The IAM user was able to interact with the development EC2 instance because the correct resource tag matched the IAM policy condition.
+![alt text](../images/iam-user-credentials.png)

@@ -10,3 +10,6 @@ IAM Policy
    │
    ├── Allow access to Development EC2
    └── Deny access to Production EC2
+
+   
+   ![alt text](../images/architecture.png)

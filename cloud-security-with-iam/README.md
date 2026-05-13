@@ -1,4 +1,3 @@
-# Cloud Security with AWS IAM
 
 # Cloud Security with AWS IAM
 
@@ -7,13 +6,9 @@
 **Author:** Jayasri Selvi
 **Email:** [jayasriselvi23@gmail.com](mailto:jayasriselvi23@gmail.com)
 
----
-
-![Cloud Security with AWS IAM](http://learn.nextwork.org/confident_vermilion_curious_karearea/uploads/aws-security-iam_1c864649)
 
 ---
 
-# Introducing Today’s Project!
 
 ## Project Overview
 
@@ -49,17 +44,6 @@ This project helped me gain practical experience in securing cloud resources and
 * Testing permissions using IAM users
 * Using the IAM Policy Simulator
 
----
-
-# Project Reflection
-
-This project took me approximately **3 hours** to complete.
-
-The most challenging part was understanding how IAM policies interact with EC2 instances and how permissions are evaluated based on resource tags and policy conditions.
-
-One of the most interesting parts of this project was testing IAM permissions in real time and seeing how AWS blocks unauthorized actions automatically.
-
-Overall, this project improved my understanding of cloud security fundamentals and taught me how organizations manage secure access in AWS environments.
 
 ---
 
@@ -391,31 +375,3 @@ Through this project, I learned:
 
 This project gave me hands-on experience with real-world cloud security practices and strengthened my understanding of AWS IAM fundamentals.
 
----
-
-# Suggested GitHub Repository Structure
-
-```bash
-cloud-security-with-aws-iam/
-│
-├── README.md
-├── images/
-│   ├── ec2-tags.png
-│   ├── iam-policy.png
-│   ├── iam-login.png
-│   ├── production-access.png
-│   └── development-test.png
-│
-├── policies/
-│   └── development-ec2-policy.json
-│
-├── docs/
-│   ├── architecture.md
-│   ├── iam-notes.md
-│   └── troubleshooting.md
-│
-└── screenshots/
-    ├── account-alias.png
-    ├── ec2-instances.png
-    └── policy-simulator.png
-```

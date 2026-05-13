@@ -1,24 +1,40 @@
 # Troubleshooting
+![alt text](../images/troubleshoot2.png)
 
 
-Problem
+![alt text](../images/troubleshoot.png)
 
-While logged in as the IAM user, I received an Access Denied error when trying to stop or manage EC2 instances.
+<section>
+  <h2>Problem</h2>
+  <p>
+    While logged in as the IAM user, I received an <strong>Access Denied</strong> error
+    when trying to stop or manage EC2 instances.
+  </p>
 
-Cause
+  <h2>Cause</h2>
+  <p>
+    The IAM policy only allowed access to EC2 instances tagged with:
+  </p>
 
-The IAM policy only allowed access to EC2 instances tagged with:
+  <pre><code>"Env": "development"</code></pre>
 
-"Env": "development"
+  <p>
+    The production instance had a different tag value, so AWS automatically
+    denied access.
+  </p>
 
-The production instance had a different tag value, so AWS denied access automatically.
+  <h2>Solution</h2>
+  <p>I verified the following:</p>
 
-Solution
+  <ul>
+    <li>The EC2 instance tags</li>
+    <li>The IAM policy conditions</li>
+    <li>The attached user group permissions</li>
+  </ul>
 
-I verified:
+  <p>
+    After checking the tag configuration, I understood why the production
+    instance was restricted.
+  </p>
+</section>
 
-The EC2 instance tags
-The IAM policy conditions
-The attached user group permissions
-
-After checking the tag configuration, I understood why the production instance was restricted.
