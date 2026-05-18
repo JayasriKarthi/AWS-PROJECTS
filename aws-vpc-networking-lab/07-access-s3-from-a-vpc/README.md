@@ -1,17 +1,7 @@
 
 
-# Introducing Today's Project!
+# Introducing Today's Project!!
 
-
-## Why is Amazon VPC useful?
-
-- Provides secure cloud resource isolation  
-- Controls traffic flow  
-- Supports both public and private networking  
-- Enhances infrastructure security  
-- Enables private communication with AWS services  
-
----
 
 # How I used Amazon VPC in this project
 
@@ -82,7 +72,7 @@ I created IAM access keys and configured AWS CLI on my EC2 instance.
 - AWS Secret Access Key  
 - Default Region  
 
-![alt text](<screenshots/Screenshot from 2026-05-16 16-00-38.png>)
+![alt text](<screenshots/Screenshot from 2026-05-16 16-06-54.png>)
 
 ### Purpose:
 Allows EC2 to authenticate securely with AWS services.
@@ -97,6 +87,8 @@ Although access keys were used here, IAM Roles are the recommended production ap
 ![alt text](<screenshots/Screenshot from 2026-05-16 16-00-38.png>)
 
 ![alt text](image.png)
+
+![alt text](<screenshots/Screenshot from 2026-05-16 16-06-54.png>)
 
 ### Command:
 ```bash
