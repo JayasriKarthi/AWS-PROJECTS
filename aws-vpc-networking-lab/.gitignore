@@ -1,0 +1,14 @@
+# Ignore local files
+*.log
+*.tmp
+.DS_Store
+
+# Ignore IDE files
+.vscode/
+.idea/
+
+# Ignore AWS credentials and local state
+*.pem
+*.key
+terraform.tfstate
+*.tfstate.*
