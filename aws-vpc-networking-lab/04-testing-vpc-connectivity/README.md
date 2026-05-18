@@ -106,6 +106,26 @@ I fixed the issue by:
 
 Ping is a network diagnostic tool used to verify whether one server can communicate with another.
 
+ Project Screenshots
+
+
+
+### SSH Failure for Troubleshooting
+![alt text](<images/Screenshot from 2026-05-15 15-29-51.png>)
+
+### Successful SSH Session
+![alt text](<images/Screenshot from 2026-05-15 15-37-53.png>)
+
+
+### Private Instance Connectivity Attempt
+![alt text](<images/Screenshot from 2026-05-15 15-47-23.png>)
+
+### Successful Internal Ping Test
+![alt text](<images/Screenshot from 2026-05-15 16-16-58.png>)
+
+
+
+
 
 ## Skills Developed
 
