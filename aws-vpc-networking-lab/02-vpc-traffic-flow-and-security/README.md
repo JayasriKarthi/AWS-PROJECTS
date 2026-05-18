@@ -193,8 +193,4 @@ This project strengthened my practical AWS networking and cybersecurity knowledg
 
 ---
 
-## Author
 
-**Jayasri Selvi**  
-Aspiring Cloud & Software Engineer  
-Focused on AWS, Cybersecurity, and Real-World Cloud Projects
