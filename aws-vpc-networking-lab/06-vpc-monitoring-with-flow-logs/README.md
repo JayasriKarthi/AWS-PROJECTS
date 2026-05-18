@@ -218,7 +218,7 @@ Allow VPC Flow Logs to publish traffic logs to CloudWatch.
 ---
 
 ## 📷 Flow Log Configuration
-![Image](http://learn.nextwork.org/confident_vermilion_curious_karearea/uploads/aws-networks-peering_7685490c)
+
 
 ---
 
