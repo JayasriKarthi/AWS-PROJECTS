@@ -62,27 +62,6 @@ By completing this project, I learned how to:
 
 ---
 
-## 📷 Multi-VPC Architecture
-![Image](http://learn.nextwork.org/confident_vermilion_curious_karearea/uploads/aws-networks-peering_11111111)
-
----
-
-# ☁️ What is Amazon VPC?
-
-Amazon Virtual Private Cloud (VPC) allows users to create isolated virtual networks within AWS.
-
-### Benefits:
-- Secure resource isolation
-- Custom IP address ranges
-- Subnet creation
-- Routing control
-- Security policies
-- Private and public networking
-
-### How I used Amazon VPC:
-In this project, I created two independent VPCs with unique CIDR ranges and connected them securely using VPC Peering.
-
----
 
 # 🚀 Project Implementation Steps
 
@@ -177,6 +156,9 @@ Without route updates, VPCs cannot locate each other’s private networks.
 ### Purpose:
 To store and centralize VPC network traffic logs.
 
+![alt text](<screenshots/Screenshot from 2026-05-16 12-25-29.png>)
+
+
 ---
 
 # 🔐 Step 6 - Create IAM Policy & Role for Flow Logs
@@ -194,6 +176,10 @@ Permissions included:
 
 ### Purpose:
 Allow VPC Flow Logs to publish traffic logs to CloudWatch.
+
+## Log Insights
+
+![alt text](<screenshots/Screenshot from 2026-05-16 12-37-27.png>)
 
 ---
 
@@ -219,6 +205,8 @@ Allow VPC Flow Logs to publish traffic logs to CloudWatch.
 
 ## 📷 Flow Log Configuration
 
+![alt text](<screenshots/Screenshot from 2026-05-16 12-26-01.png>)
+
 
 ---
 
@@ -236,10 +224,6 @@ Allow VPC Flow Logs to publish traffic logs to CloudWatch.
 ### Validation:
 Confirmed secure private communication through VPC Peering.
 
----
-
-## 📷 Successful Ping Test
-![Image](http://learn.nextwork.org/confident_vermilion_curious_karearea/uploads/aws-networks-peering_7a29d352)
 
 ---
 
@@ -265,7 +249,7 @@ Used query:
 ---
 
 # 📷 CloudWatch Logs Monitoring
-![Image](http://learn.nextwork.org/confident_vermilion_curious_karearea/uploads/aws-networks-peering_45663498)
+ ![alt text](<screenshots/Screenshot from 2026-05-16 12-37-27.png>)
 
 ---
 
@@ -310,20 +294,6 @@ Used query:
 - CloudWatch
 - Log Insights
 - Traffic analysis
-
----
-
-# 💡 Real-World Applications
-
-This architecture is useful for:
-
-- Multi-tier enterprise applications
-- Cross-VPC secure communication
-- Monitoring internal AWS traffic
-- Security auditing
-- Cloud infrastructure troubleshooting
-- Hybrid network expansion
-
 
 ---
 
